@@ -1,0 +1,41 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="App3.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    >
+
+
+    <Grid>
+
+        <Rectangle Fill="{StaticResource SystemControlAcrylicWindowBrush}" Margin="0,-90,0,0" Grid.ColumnSpan="3"/>
+
+        <TextBox x:ConnectionId='2' x:Name="textBox" HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" PlaceholderText="What Do You Want To Do Today" IsTextPredictionEnabled="True"                                                         />
+        <StackPanel x:ConnectionId='3' x:Name="MyStackPanel">
+            <TextBlock Text="Your Daily Docket"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"  FontSize="36"
+                       >
+            </TextBlock>
+            <ListView x:ConnectionId='4'  x:Name="MyListView"
+            IsItemClickEnabled="False"
+            IsSwipeEnabled="False"
+            CanDragItems="False"
+                                        
+             IsDoubleTapEnabled="True" 
+             HorizontalAlignment="Center" 
+                                            
+             Width="277" 
+            
+             >
+                <StackPanel>
+                    <TextBlock/>
+                </StackPanel>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Page>
+
